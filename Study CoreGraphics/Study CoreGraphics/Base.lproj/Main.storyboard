@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1fe-fb-xUZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Rotating and Blinking Button"/>
                                 <connections>
-                                    <segue destination="oyp-0H-VxS" kind="presentation" id="hzc-fO-JrB"/>
+                                    <segue destination="oyp-0H-VxS" kind="show" id="hzc-fO-JrB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
@@ -42,13 +42,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Circle View"/>
                                 <connections>
-                                    <segue destination="MuC-mD-vqp" kind="presentation" id="CyX-Gs-CC8"/>
+                                    <segue destination="MuC-mD-vqp" kind="show" id="CyX-Gs-CC8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QtQ-gn-mJ4"/>
                     <connections>
                         <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
                         <outletCollection property="buttons" destination="Sk9-I0-dBw" collectionClass="NSMutableArray" id="ceh-jU-5HO"/>
@@ -56,18 +57,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="1061.8320610687022" y="4.9295774647887329"/>
         </scene>
-        <!--View Controller-->
+        <!--Rotating And Blinking Button-->
         <scene sceneID="d4M-x4-ZX6">
             <objects>
                 <viewController id="oyp-0H-VxS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uCg-dx-GVR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM1-XP-8IA" customClass="RotatingBlinkingButton" customModule="Study_CoreGraphics" customModuleProvider="target">
-                                <rect key="frame" x="140.33333333333334" y="346" width="112.33333333333334" height="150"/>
+                                <rect key="frame" x="140.33333333333334" y="385.66666666666669" width="112.33333333333334" height="150.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="HjC-Xy-hRJ"/>
                                     <constraint firstAttribute="width" secondItem="VM1-XP-8IA" secondAttribute="height" multiplier="3:4" id="vtB-JJ-OD2"/>
@@ -91,18 +92,18 @@
                             <constraint firstItem="VM1-XP-8IA" firstAttribute="centerY" secondItem="7PL-Gp-TFo" secondAttribute="centerY" id="6qC-qT-Y3x"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9Kt-u8-aGy"/>
+                    <navigationItem key="navigationItem" title="Rotating And Blinking Button" id="9Kt-u8-aGy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCz-Xw-uru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="-325"/>
+            <point key="canvasLocation" x="2228.2442748091603" y="-325.35211267605638"/>
         </scene>
-        <!--View Controller-->
+        <!--Circle View-->
         <scene sceneID="Y6c-6d-tRo">
             <objects>
                 <viewController id="MuC-mD-vqp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HGx-qU-Id1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X92-zj-zjJ" customClass="CircleView" customModule="Study_CoreGraphics" customModuleProvider="target">
@@ -114,10 +115,32 @@
                         <viewLayoutGuide key="safeArea" id="K4L-Sp-svC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Circle View" id="zWo-uL-V4a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpj-YP-JpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301.5267175572519" y="355.63380281690144"/>
+            <point key="canvasLocation" x="2228.2442748091603" y="355.63380281690144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DMB-X3-vyB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1fe-fb-xUZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WFn-Sr-o6a">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.24507701909999999" green="0.70745767329999998" blue="0.85222976559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cRU-d6-zz2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J74-ad-iQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <designables>
