@@ -16,48 +16,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Core Graphics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysc-7Q-GTO">
-                                <rect key="frame" x="110" y="163" width="173" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Graphics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysc-7Q-GTO">
+                                <rect key="frame" x="110.33333333333333" y="163" width="172.66666666666669" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.12971338958502099" green="0.70879920248242179" blue="0.85222976559494945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-I0-dBw">
-                                <rect key="frame" x="65" y="346" width="262" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.44966499682993505" green="0.78795163653286804" blue="0.86413978943850267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Rotating and Blinking Button"/>
-                                <connections>
-                                    <segue destination="oyp-0H-VxS" kind="show" id="hzc-fO-JrB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
-                                <rect key="frame" x="65" y="415" width="262" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Circle View"/>
-                                <connections>
-                                    <segue destination="MuC-mD-vqp" kind="show" id="CyX-Gs-CC8"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-EC-DbB">
+                                <rect key="frame" x="76.666666666666686" y="356" width="240" height="235"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-I0-dBw">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34.333333333333336"/>
+                                        <color key="backgroundColor" red="0.44966499682993505" green="0.78795163653286804" blue="0.86413978943850267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rotating and Blinking Button"/>
+                                        <connections>
+                                            <segue destination="oyp-0H-VxS" kind="show" id="hzc-fO-JrB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
+                                        <rect key="frame" x="0.0" y="100.33333333333331" width="240" height="34.333333333333343"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Circle View"/>
+                                        <connections>
+                                            <segue destination="MuC-mD-vqp" kind="show" id="CyX-Gs-CC8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvu-Fv-Gno">
+                                        <rect key="frame" x="0.0" y="200.66666666666663" width="240" height="34.333333333333343"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Gradient View"/>
+                                        <connections>
+                                            <segue destination="3ac-40-wex" kind="show" id="0d0-F4-vHB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="B5R-Ap-h2F"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysc-7Q-GTO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="2c0-t8-5th"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbx-EC-DbB" secondAttribute="bottom" constant="227" id="HES-lY-sKb"/>
+                            <constraint firstItem="ysc-7Q-GTO" firstAttribute="centerX" secondItem="fbx-EC-DbB" secondAttribute="centerX" id="kIC-YI-Q8F"/>
+                            <constraint firstItem="fbx-EC-DbB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rS3-bC-z79"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QtQ-gn-mJ4"/>
                     <connections>
-                        <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
                         <outletCollection property="buttons" destination="Sk9-I0-dBw" collectionClass="NSMutableArray" id="ceh-jU-5HO"/>
+                        <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
+                        <outletCollection property="buttons" destination="Fvu-Fv-Gno" collectionClass="NSMutableArray" id="h3t-Fg-wkQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.8320610687022" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="1060.3053435114502" y="4.9295774647887329"/>
         </scene>
         <!--Rotating And Blinking Button-->
         <scene sceneID="d4M-x4-ZX6">
@@ -120,6 +142,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpj-YP-JpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2228.2442748091603" y="355.63380281690144"/>
+        </scene>
+        <!--Gradient View-->
+        <scene sceneID="xxr-hx-Ul4">
+            <objects>
+                <viewController id="3ac-40-wex" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14v-XK-a4s" customClass="GradientsView" customModule="Study_CoreGraphics" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mrX-Lc-syL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gradient View" id="bXA-BT-y62"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXC-iB-f3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="787"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DMB-X3-vyB">

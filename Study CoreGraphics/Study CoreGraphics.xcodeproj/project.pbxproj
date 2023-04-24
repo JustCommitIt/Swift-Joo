@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F66085CB29F6A94300A39D5A /* GradientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66085CA29F6A94300A39D5A /* GradientsView.swift */; };
 		F66B181D29EBF3AE0019C201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B181C29EBF3AE0019C201 /* AppDelegate.swift */; };
 		F66B181F29EBF3AE0019C201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B181E29EBF3AE0019C201 /* SceneDelegate.swift */; };
 		F66B182129EBF3AE0019C201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B182029EBF3AE0019C201 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F66085CA29F6A94300A39D5A /* GradientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsView.swift; sourceTree = "<group>"; };
 		F66B181929EBF3AE0019C201 /* Study CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study CoreGraphics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B181C29EBF3AE0019C201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66B181E29EBF3AE0019C201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */,
 				F6D2B07029EC480600E355FE /* CircleView.swift */,
+				F66085CA29F6A94300A39D5A /* GradientsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66085CB29F6A94300A39D5A /* GradientsView.swift in Sources */,
 				F66B182129EBF3AE0019C201 /* ViewController.swift in Sources */,
 				F6D2B07129EC480600E355FE /* CircleView.swift in Sources */,
 				F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */,
