@@ -9,12 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var selectedRotatingBlinkingButton: UIButton!
+    @IBOutlet var buttons: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        selectedRotatingBlinkingButton.layer.cornerRadius = 10
+        buttons.forEach{ button in
+            button.layer.cornerRadius = 10
+        }
     }
 
 }
-

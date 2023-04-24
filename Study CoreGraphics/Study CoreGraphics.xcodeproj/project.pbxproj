@@ -14,6 +14,7 @@
 		F66B182629EBF3AF0019C201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66B182529EBF3AF0019C201 /* Assets.xcassets */; };
 		F66B182929EBF3AF0019C201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66B182729EBF3AF0019C201 /* LaunchScreen.storyboard */; };
 		F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */; };
+		F6D2B07129EC480600E355FE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2B07029EC480600E355FE /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F66B182829EBF3AF0019C201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66B182A29EBF3AF0019C201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingBlinkingButton.swift; sourceTree = "<group>"; };
+		F6D2B07029EC480600E355FE /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */,
+				F6D2B07029EC480600E355FE /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66B182129EBF3AE0019C201 /* ViewController.swift in Sources */,
+				F6D2B07129EC480600E355FE /* CircleView.swift in Sources */,
 				F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */,
 				F66B181D29EBF3AE0019C201 /* AppDelegate.swift in Sources */,
 				F66B181F29EBF3AE0019C201 /* SceneDelegate.swift in Sources */,

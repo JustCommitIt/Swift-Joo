@@ -34,12 +34,24 @@
                                     <segue destination="oyp-0H-VxS" kind="presentation" id="hzc-fO-JrB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
+                                <rect key="frame" x="65" y="415" width="262" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Circle View"/>
+                                <connections>
+                                    <segue destination="MuC-mD-vqp" kind="presentation" id="CyX-Gs-CC8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="selectedRotatingBlinkingButton" destination="Sk9-I0-dBw" id="uiJ-yj-U2D"/>
+                        <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
+                        <outletCollection property="buttons" destination="Sk9-I0-dBw" collectionClass="NSMutableArray" id="ceh-jU-5HO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,7 +97,34 @@
             </objects>
             <point key="canvasLocation" x="1302" y="-325"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Y6c-6d-tRo">
+            <objects>
+                <viewController id="MuC-mD-vqp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HGx-qU-Id1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X92-zj-zjJ" customClass="CircleView" customModule="Study_CoreGraphics" customModuleProvider="target">
+                                <rect key="frame" x="76" y="301" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K4L-Sp-svC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpj-YP-JpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1301.5267175572519" y="355.63380281690144"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="VM1-XP-8IA">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
