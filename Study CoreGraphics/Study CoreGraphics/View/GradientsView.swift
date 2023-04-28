@@ -11,33 +11,31 @@ class GradientsView: UIView {
 
     override func draw(_ rect: CGRect) {
 
-        let context = UIGraphicsGetCurrentContext()
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return
+        }
 
-            let locations: [CGFloat] = [ 0.0, 0.25, 0.5, 0.75 ]
+        let locations: [CGFloat] = [0.0, 0.33, 0.66, 1.0]
 
-            let colors = [UIColor.red.cgColor,
-                          UIColor.green.cgColor,
-                          UIColor.blue.cgColor,
-                          UIColor.yellow.cgColor]
+        let colors = [UIColor.red.cgColor,
+                      UIColor.green.cgColor,
+                      UIColor.blue.cgColor,
+                      UIColor.yellow.cgColor]
 
-            let colorspace = CGColorSpaceCreateDeviceRGB()
+        let colorspace = CGColorSpaceCreateDeviceRGB()
 
-            let gradient = CGGradient(colorsSpace: colorspace,
-                          colors: colors as CFArray, locations: locations)
+        guard let gradient = CGGradient(colorsSpace: colorspace,
+                                        colors: colors as CFArray,
+                                        locations: locations) else {
+            return
+        }
 
-            var startPoint = CGPoint()
-            var endPoint =  CGPoint()
+        let startPoint = CGPoint.zero
+        let endPoint = CGPoint(x: bounds.width, y: bounds.height)
 
-            startPoint.x = 0.0
-            startPoint.y = 0.0
-            endPoint.x = 700
-            endPoint.y = 600
-
-            if let gradient = gradient {
-                context?.drawLinearGradient(gradient,
-                                        start: startPoint, end: endPoint,
-                                        options: .drawsBeforeStartLocation)
-            }
+        context.drawLinearGradient(gradient,
+                                    start: startPoint, end: endPoint,
+                                    options: .drawsBeforeStartLocation)
     }
 
 }
