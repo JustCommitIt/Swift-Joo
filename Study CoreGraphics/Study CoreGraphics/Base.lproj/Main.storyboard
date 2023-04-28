@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-EC-DbB">
-                                <rect key="frame" x="76.666666666666686" y="356" width="240" height="235"/>
+                                <rect key="frame" x="76.666666666666686" y="255.66666666666666" width="240" height="335.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-I0-dBw">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34.333333333333336"/>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
-                                        <rect key="frame" x="0.0" y="100.33333333333331" width="240" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="100.33333333333334" width="240" height="34.333333333333343"/>
                                         <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -46,13 +46,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvu-Fv-Gno">
-                                        <rect key="frame" x="0.0" y="200.66666666666663" width="240" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="200.66666666666666" width="240" height="34.333333333333343"/>
                                         <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Gradient View"/>
                                         <connections>
                                             <segue destination="3ac-40-wex" kind="show" id="0d0-F4-vHB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqT-ac-dfN">
+                                        <rect key="frame" x="0.0" y="301" width="240" height="34.333333333333314"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Graph Touch Event View"/>
+                                        <connections>
+                                            <segue destination="Lsi-Pp-V9q" kind="show" id="93L-ni-M3e"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -75,6 +85,7 @@
                         <outletCollection property="buttons" destination="Sk9-I0-dBw" collectionClass="NSMutableArray" id="ceh-jU-5HO"/>
                         <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
                         <outletCollection property="buttons" destination="Fvu-Fv-Gno" collectionClass="NSMutableArray" id="h3t-Fg-wkQ"/>
+                        <outletCollection property="buttons" destination="EqT-ac-dfN" collectionClass="NSMutableArray" id="jiY-l6-Vzj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,6 +190,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J74-ad-iQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+        <!--Graph Touch Event View-->
+        <scene sceneID="pv7-HG-FXD">
+            <objects>
+                <viewController id="Lsi-Pp-V9q" customClass="GraphViewController" customModule="Study_CoreGraphics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOb-V1-6TY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ahq-KZ-YhS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Graph Touch Event View" id="5Z7-ZM-c4U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="407-gL-hcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507.6335877862596" y="-913.38028169014092"/>
         </scene>
     </scenes>
     <designables>

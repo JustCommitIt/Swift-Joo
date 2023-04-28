@@ -15,6 +15,8 @@
 		F66B182629EBF3AF0019C201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66B182529EBF3AF0019C201 /* Assets.xcassets */; };
 		F66B182929EBF3AF0019C201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66B182729EBF3AF0019C201 /* LaunchScreen.storyboard */; };
 		F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */; };
+		F676A6C829FC078700EF5D52 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676A6C729FC078700EF5D52 /* GraphView.swift */; };
+		F676A6CA29FC081400EF5D52 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676A6C929FC081400EF5D52 /* GraphViewController.swift */; };
 		F6D2B07129EC480600E355FE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2B07029EC480600E355FE /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		F66B182829EBF3AF0019C201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F66B182A29EBF3AF0019C201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingBlinkingButton.swift; sourceTree = "<group>"; };
+		F676A6C729FC078700EF5D52 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		F676A6C929FC081400EF5D52 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		F6D2B07029EC480600E355FE /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,7 @@
 				F66B181C29EBF3AE0019C201 /* AppDelegate.swift */,
 				F66B181E29EBF3AE0019C201 /* SceneDelegate.swift */,
 				F66B182029EBF3AE0019C201 /* ViewController.swift */,
+				F676A6C929FC081400EF5D52 /* GraphViewController.swift */,
 				F66B182229EBF3AE0019C201 /* Main.storyboard */,
 				F66B182529EBF3AF0019C201 /* Assets.xcassets */,
 				F66B182729EBF3AF0019C201 /* LaunchScreen.storyboard */,
@@ -80,6 +85,7 @@
 				F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */,
 				F6D2B07029EC480600E355FE /* CircleView.swift */,
 				F66085CA29F6A94300A39D5A /* GradientsView.swift */,
+				F676A6C729FC078700EF5D52 /* GraphView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,8 +163,10 @@
 			files = (
 				F66085CB29F6A94300A39D5A /* GradientsView.swift in Sources */,
 				F66B182129EBF3AE0019C201 /* ViewController.swift in Sources */,
+				F676A6C829FC078700EF5D52 /* GraphView.swift in Sources */,
 				F6D2B07129EC480600E355FE /* CircleView.swift in Sources */,
 				F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */,
+				F676A6CA29FC081400EF5D52 /* GraphViewController.swift in Sources */,
 				F66B181D29EBF3AE0019C201 /* AppDelegate.swift in Sources */,
 				F66B181F29EBF3AE0019C201 /* SceneDelegate.swift in Sources */,
 			);
