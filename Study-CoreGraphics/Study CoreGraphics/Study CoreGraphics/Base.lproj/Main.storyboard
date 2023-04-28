@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1fe-fb-xUZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Study_CoreGraphics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Graphics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysc-7Q-GTO">
+                                <rect key="frame" x="110.33333333333333" y="163" width="172.66666666666669" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.12971338958502099" green="0.70879920248242179" blue="0.85222976559494945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-EC-DbB">
+                                <rect key="frame" x="76.666666666666686" y="255.66666666666666" width="240" height="335.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-I0-dBw">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34.333333333333336"/>
+                                        <color key="backgroundColor" red="0.44966499682993505" green="0.78795163653286804" blue="0.86413978943850267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Rotating and Blinking Button"/>
+                                        <connections>
+                                            <segue destination="oyp-0H-VxS" kind="show" id="hzc-fO-JrB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
+                                        <rect key="frame" x="0.0" y="100.33333333333334" width="240" height="34.333333333333343"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Circle View"/>
+                                        <connections>
+                                            <segue destination="MuC-mD-vqp" kind="show" id="CyX-Gs-CC8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvu-Fv-Gno">
+                                        <rect key="frame" x="0.0" y="200.66666666666666" width="240" height="34.333333333333343"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Gradient View"/>
+                                        <connections>
+                                            <segue destination="3ac-40-wex" kind="show" id="0d0-F4-vHB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqT-ac-dfN">
+                                        <rect key="frame" x="0.0" y="301" width="240" height="34.333333333333314"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Graph Touch Event View"/>
+                                        <connections>
+                                            <segue destination="Lsi-Pp-V9q" kind="show" id="93L-ni-M3e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="B5R-Ap-h2F"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysc-7Q-GTO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="2c0-t8-5th"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbx-EC-DbB" secondAttribute="bottom" constant="227" id="HES-lY-sKb"/>
+                            <constraint firstItem="ysc-7Q-GTO" firstAttribute="centerX" secondItem="fbx-EC-DbB" secondAttribute="centerX" id="kIC-YI-Q8F"/>
+                            <constraint firstItem="fbx-EC-DbB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rS3-bC-z79"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QtQ-gn-mJ4"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="Sk9-I0-dBw" collectionClass="NSMutableArray" id="ceh-jU-5HO"/>
+                        <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
+                        <outletCollection property="buttons" destination="Fvu-Fv-Gno" collectionClass="NSMutableArray" id="h3t-Fg-wkQ"/>
+                        <outletCollection property="buttons" destination="EqT-ac-dfN" collectionClass="NSMutableArray" id="jiY-l6-Vzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060.3053435114502" y="4.9295774647887329"/>
+        </scene>
+        <!--Rotating And Blinking Button-->
+        <scene sceneID="d4M-x4-ZX6">
+            <objects>
+                <viewController id="oyp-0H-VxS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uCg-dx-GVR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VM1-XP-8IA" customClass="RotatingBlinkingButton" customModule="Study_CoreGraphics" customModuleProvider="target">
+                                <rect key="frame" x="140.33333333333334" y="385.66666666666669" width="112.33333333333334" height="150.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HjC-Xy-hRJ"/>
+                                    <constraint firstAttribute="width" secondItem="VM1-XP-8IA" secondAttribute="height" multiplier="3:4" id="vtB-JJ-OD2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorOfBorder">
+                                        <color key="value" red="0.44992911819999998" green="0.78909105059999995" blue="0.86171919109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorOfBackground">
+                                        <color key="value" red="0.44992911819999998" green="0.78909105059999995" blue="0.86171919109999995" alpha="0.19815811258278146" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7PL-Gp-TFo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VM1-XP-8IA" firstAttribute="centerX" secondItem="7PL-Gp-TFo" secondAttribute="centerX" id="0t1-b9-0ed"/>
+                            <constraint firstItem="VM1-XP-8IA" firstAttribute="centerY" secondItem="7PL-Gp-TFo" secondAttribute="centerY" id="6qC-qT-Y3x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rotating And Blinking Button" id="9Kt-u8-aGy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCz-Xw-uru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228.2442748091603" y="-325.35211267605638"/>
+        </scene>
+        <!--Circle View-->
+        <scene sceneID="Y6c-6d-tRo">
+            <objects>
+                <viewController id="MuC-mD-vqp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HGx-qU-Id1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X92-zj-zjJ" customClass="CircleView" customModule="Study_CoreGraphics" customModuleProvider="target">
+                                <rect key="frame" x="76" y="301" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K4L-Sp-svC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Circle View" id="zWo-uL-V4a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpj-YP-JpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228.2442748091603" y="355.63380281690144"/>
+        </scene>
+        <!--Gradient View-->
+        <scene sceneID="xxr-hx-Ul4">
+            <objects>
+                <viewController id="3ac-40-wex" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="14v-XK-a4s" customClass="GradientsView" customModule="Study_CoreGraphics" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mrX-Lc-syL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gradient View" id="bXA-BT-y62"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXC-iB-f3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="787"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DMB-X3-vyB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1fe-fb-xUZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WFn-Sr-o6a">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.24507701909999999" green="0.70745767329999998" blue="0.85222976559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cRU-d6-zz2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J74-ad-iQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+        <!--Graph Touch Event View-->
+        <scene sceneID="pv7-HG-FXD">
+            <objects>
+                <viewController id="Lsi-Pp-V9q" customClass="GraphViewController" customModule="Study_CoreGraphics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOb-V1-6TY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ahq-KZ-YhS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Graph Touch Event View" id="5Z7-ZM-c4U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="407-gL-hcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507.6335877862596" y="-913.38028169014092"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="VM1-XP-8IA">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

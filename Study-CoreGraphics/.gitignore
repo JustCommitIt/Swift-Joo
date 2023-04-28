@@ -1,0 +1,186 @@
+Last login: Thu Apr 13 11:00:10 on ttys000
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,macos
+# Files that might appear in the root of a volume
+*.moved-aside
+*.mode2v3
+!default.perspectivev3
+*.dSYM.zip
+*.dSYM
+# Packages/
+
+fastlane/Preview.html
+➜  ~ ls
+Applications Documents    Library      Music        Postman      Sesac
+Desktop      Downloads    Movies       Pictures     Public       goinfre
+➜  ~ mkdir Study
+➜  ~ cd Study
+➜  Study ls
+➜  Study git clone https://github.com/JustCommitIt/Swift-Joo.git
+Cloning into 'Swift-Joo'...
+warning: You appear to have cloned an empty repository.
+➜  Study ls
+Swift-Joo
+➜  Study cd Swift-Joo
+➜  Swift-Joo git:(main) ls
+➜  Swift-Joo git:(main) mkdir CoreGraphics
+➜  Swift-Joo git:(main) cd CoreGraphics
+➜  CoreGraphics git:(main) ls
+➜  CoreGraphics git:(main) open .
+➜  CoreGraphics git:(main) ✗ ls
+➜  CoreGraphics git:(main) ✗ ls
+CoreGraphicsTutorial
+➜  CoreGraphics git:(main) ✗ cd ..
+➜  Swift-Joo git:(main) ✗ ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ vi .gitignore
+➜  Swift-Joo git:(main) ✗ ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ git add .gitignore
+➜  Swift-Joo git:(main) ✗ git commit -m "style: .gitignore 추가"
+[main (root-commit) 85f7bd7] style: .gitignore 추가
+ 17 files changed, 755 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .gitignore
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.pbxproj
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcuserdata/jaewpark.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/xcuserdata/jaewpark.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/AppDelegate.swift
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/Assets.xcassets/AccentColor.colorset/Contents.json
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/Assets.xcassets/Contents.json
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/Base.lproj/LaunchScreen.storyboard
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/Base.lproj/Main.storyboard
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/Info.plist
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/SceneDelegate.swift
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/View/CounterCircleButton.swift
+ create mode 100644 CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/ViewController.swift
+➜  Swift-Joo git:(main) ✗ ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.pbxproj
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcuserdata/jaewpark.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/View/CounterCircleButton.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Swift-Joo git:(main) ✗ git log
+➜  Swift-Joo git:(main) ✗ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.pbxproj
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcuserdata/jaewpark.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/View/CounterCircleButton.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Swift-Joo git:(main) ✗ git reset
+Unstaged changes after reset:
+M	CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.pbxproj
+M	CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcuserdata/jaewpark.xcuserdatad/UserInterfaceState.xcuserstate
+M	CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/View/CounterCircleButton.swift
+➜  Swift-Joo git:(main) ✗ ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ rm -rf .DS_Store
+➜  Swift-Joo git:(main) ✗ ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ git add .gitignore
+➜  Swift-Joo git:(main) ✗ git commit -m "style: .gitignore 추가"
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    .DS_Store
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.pbxproj
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcuserdata/jaewpark.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial/View/CounterCircleButton.swift
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Swift-Joo git:(main) ✗ git restore CoreGraphics/*
+➜  Swift-Joo git:(main) ✗ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Swift-Joo git:(main) ✗ git push
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (35/35), 13.62 KiB | 4.54 MiB/s, done.
+Total 35 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/JustCommitIt/Swift-Joo.git
+ * [new branch]      main -> main
+➜  Swift-Joo git:(main) ✗ ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ git reset
+Unstaged changes after reset:
+D	.DS_Store
+M	CoreGraphics/CoreGraphicsTutorial/CoreGraphicsTutorial.xcodeproj/project.xcworkspace/xcuserdata/jaewpark.xcuserdatad/UserInterfaceState.xcuserstate
+➜  Swift-Joo git:(main) ✗ git push
+Everything up-to-date
+➜  Swift-Joo git:(main) ✗ git reset --hard
+HEAD is now at 85f7bd7 style: .gitignore 추가
+➜  Swift-Joo git:(main) git reset --hard
+HEAD is now at 85f7bd7 style: .gitignore 추가
+➜  Swift-Joo git:(main) git reset --hard ^1
+fatal: ambiguous argument '^1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+➜  Swift-Joo git:(main) git log
+➜  Swift-Joo git:(main) git reset --hard 85f7bd
+HEAD is now at 85f7bd7 style: .gitignore 추가
+➜  Swift-Joo git:(main) git reset --hard HEAD^
+fatal: ambiguous argument 'HEAD^': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+➜  Swift-Joo git:(main) ls
+CoreGraphics
+➜  Swift-Joo git:(main) ls
+CoreGraphics
+➜  Swift-Joo git:(main) ✗ cd CoreGraphics
+➜  CoreGraphics git:(main) ✗ ls
+CoreGraphicsTutorial
+➜  CoreGraphics git:(main) ✗ cd CoreGraphicsTutorial
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+-- INSERT --
