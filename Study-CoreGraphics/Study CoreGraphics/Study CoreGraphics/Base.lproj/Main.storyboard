@@ -22,8 +22,8 @@
                                 <color key="textColor" red="0.12971338958502099" green="0.70879920248242179" blue="0.85222976559494945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-EC-DbB">
-                                <rect key="frame" x="76.666666666666686" y="255.66666666666666" width="240" height="335.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-EC-DbB">
+                                <rect key="frame" x="76.666666666666686" y="299.33333333333326" width="240" height="291.66666666666674"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk9-I0-dBw">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34.333333333333336"/>
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Th-xMF">
-                                        <rect key="frame" x="0.0" y="100.33333333333334" width="240" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="64.333333333333371" width="240" height="34.333333333333343"/>
                                         <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -46,7 +46,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvu-Fv-Gno">
-                                        <rect key="frame" x="0.0" y="200.66666666666666" width="240" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="240" height="34.333333333333343"/>
                                         <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
@@ -56,13 +56,23 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqT-ac-dfN">
-                                        <rect key="frame" x="0.0" y="301" width="240" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="193" width="240" height="34.333333333333343"/>
                                         <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Graph Touch Event View"/>
                                         <connections>
                                             <segue destination="Lsi-Pp-V9q" kind="show" id="93L-ni-M3e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFw-Bs-Kc2">
+                                        <rect key="frame" x="0.0" y="257.33333333333331" width="240" height="34.333333333333314"/>
+                                        <color key="backgroundColor" red="0.44966499679999999" green="0.7879516365" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Guage View"/>
+                                        <connections>
+                                            <segue destination="Rem-JP-hap" kind="show" id="zCS-Os-B6t"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -86,6 +96,7 @@
                         <outletCollection property="buttons" destination="H9U-Th-xMF" collectionClass="NSMutableArray" id="eF8-Jg-ffi"/>
                         <outletCollection property="buttons" destination="Fvu-Fv-Gno" collectionClass="NSMutableArray" id="h3t-Fg-wkQ"/>
                         <outletCollection property="buttons" destination="EqT-ac-dfN" collectionClass="NSMutableArray" id="jiY-l6-Vzj"/>
+                        <outletCollection property="buttons" destination="lFw-Bs-Kc2" collectionClass="NSMutableArray" id="ZLz-rN-h5T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -153,6 +164,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpj-YP-JpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2228.2442748091603" y="355.63380281690144"/>
+        </scene>
+        <!--Guage View-->
+        <scene sceneID="NSH-Yr-Qlp">
+            <objects>
+                <viewController id="Rem-JP-hap" customClass="GaugeViewController" customModule="Study_CoreGraphics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XJ9-SN-zAt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQo-WA-aYl" customClass="GaugeView" customModule="Study_CoreGraphics" customModuleProvider="target">
+                                <rect key="frame" x="81.666666666666686" y="285.66666666666669" width="230" height="230.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xye-Se-IaE">
+                                        <rect key="frame" x="106.99999999999999" y="99.333333333333314" width="16" height="31.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                        <color key="textColor" red="0.20256714219999999" green="0.7584762209" blue="0.86413978940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xye-Se-IaE" firstAttribute="centerX" secondItem="LQo-WA-aYl" secondAttribute="centerX" id="2T0-vC-2mj"/>
+                                    <constraint firstItem="xye-Se-IaE" firstAttribute="centerY" secondItem="LQo-WA-aYl" secondAttribute="centerY" id="bPd-zS-b2R"/>
+                                    <constraint firstAttribute="height" constant="230" id="r3i-Kb-IC4"/>
+                                    <constraint firstAttribute="width" constant="230" id="v9W-r7-Jaf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.68948102099999997" green="0.93631771620000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.12971338960000001" green="0.70879920249999995" blue="0.85222976559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvY-tC-Dxl" customClass="GaugeButton" customModule="Study_CoreGraphics" customModuleProvider="target">
+                                <rect key="frame" x="146.66666666666666" y="555.66666666666663" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="H4y-89-ViD"/>
+                                    <constraint firstAttribute="height" constant="100" id="zOL-hy-U40"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.51632974177025837" green="0.85566515561359602" blue="0.9156509952080808" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="Rem-JP-hap" eventType="touchUpInside" id="N3y-no-Zlm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY6-MZ-JKU" customClass="GaugeButton" customModule="Study_CoreGraphics" customModuleProvider="target">
+                                <rect key="frame" x="171.66666666666666" y="665.66666666666663" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nqM-PB-HDs"/>
+                                    <constraint firstAttribute="width" constant="50" id="zAf-Oe-vSr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.68948102102202746" green="0.93631771618429815" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="Rem-JP-hap" eventType="touchUpInside" id="zwD-nM-wFB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BZj-qY-y5i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RvY-tC-Dxl" firstAttribute="centerX" secondItem="BZj-qY-y5i" secondAttribute="centerX" id="R88-ai-WuV"/>
+                            <constraint firstItem="RvY-tC-Dxl" firstAttribute="top" secondItem="LQo-WA-aYl" secondAttribute="bottom" constant="40" id="b84-kU-yx3"/>
+                            <constraint firstItem="LQo-WA-aYl" firstAttribute="centerY" secondItem="BZj-qY-y5i" secondAttribute="centerY" constant="-60" id="eva-8D-LgV"/>
+                            <constraint firstItem="LQo-WA-aYl" firstAttribute="centerX" secondItem="BZj-qY-y5i" secondAttribute="centerX" id="fYw-PE-lU0"/>
+                            <constraint firstItem="NY6-MZ-JKU" firstAttribute="centerX" secondItem="BZj-qY-y5i" secondAttribute="centerX" id="pMx-HV-HdF"/>
+                            <constraint firstItem="NY6-MZ-JKU" firstAttribute="top" secondItem="RvY-tC-Dxl" secondAttribute="bottom" constant="10" id="qrh-L4-GmQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guage View" id="RAt-Ug-zXM"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="xye-Se-IaE" id="wpU-Lo-tu8"/>
+                        <outlet property="counterView" destination="LQo-WA-aYl" id="Xfo-hS-iEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYr-7F-k6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655.72519083969462" y="785.91549295774655"/>
         </scene>
         <!--Gradient View-->
         <scene sceneID="xxr-hx-Ul4">

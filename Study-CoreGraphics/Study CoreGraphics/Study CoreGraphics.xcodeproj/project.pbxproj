@@ -17,6 +17,8 @@
 		F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */; };
 		F676A6C829FC078700EF5D52 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676A6C729FC078700EF5D52 /* GraphView.swift */; };
 		F676A6CA29FC081400EF5D52 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676A6C929FC081400EF5D52 /* GraphViewController.swift */; };
+		F676A6CC29FEC5A400EF5D52 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676A6CB29FEC5A400EF5D52 /* GaugeView.swift */; };
+		F676A6CE29FEC8D800EF5D52 /* GaugeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676A6CD29FEC8D800EF5D52 /* GaugeViewController.swift */; };
 		F6D2B07129EC480600E355FE /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D2B07029EC480600E355FE /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		F66B183129EBFFCF0019C201 /* RotatingBlinkingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingBlinkingButton.swift; sourceTree = "<group>"; };
 		F676A6C729FC078700EF5D52 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		F676A6C929FC081400EF5D52 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		F676A6CB29FEC5A400EF5D52 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		F676A6CD29FEC8D800EF5D52 /* GaugeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeViewController.swift; sourceTree = "<group>"; };
 		F6D2B07029EC480600E355FE /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,7 @@
 				F66B181E29EBF3AE0019C201 /* SceneDelegate.swift */,
 				F66B182029EBF3AE0019C201 /* ViewController.swift */,
 				F676A6C929FC081400EF5D52 /* GraphViewController.swift */,
+				F676A6CD29FEC8D800EF5D52 /* GaugeViewController.swift */,
 				F66B182229EBF3AE0019C201 /* Main.storyboard */,
 				F66B182529EBF3AF0019C201 /* Assets.xcassets */,
 				F66B182729EBF3AF0019C201 /* LaunchScreen.storyboard */,
@@ -86,6 +91,7 @@
 				F6D2B07029EC480600E355FE /* CircleView.swift */,
 				F66085CA29F6A94300A39D5A /* GradientsView.swift */,
 				F676A6C729FC078700EF5D52 /* GraphView.swift */,
+				F676A6CB29FEC5A400EF5D52 /* GaugeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,11 +169,13 @@
 			files = (
 				F66085CB29F6A94300A39D5A /* GradientsView.swift in Sources */,
 				F66B182129EBF3AE0019C201 /* ViewController.swift in Sources */,
+				F676A6CE29FEC8D800EF5D52 /* GaugeViewController.swift in Sources */,
 				F676A6C829FC078700EF5D52 /* GraphView.swift in Sources */,
 				F6D2B07129EC480600E355FE /* CircleView.swift in Sources */,
 				F66B183229EBFFD00019C201 /* RotatingBlinkingButton.swift in Sources */,
 				F676A6CA29FC081400EF5D52 /* GraphViewController.swift in Sources */,
 				F66B181D29EBF3AE0019C201 /* AppDelegate.swift in Sources */,
+				F676A6CC29FEC5A400EF5D52 /* GaugeView.swift in Sources */,
 				F66B181F29EBF3AE0019C201 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
